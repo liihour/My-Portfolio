@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio | Chetha Lihour</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-c"></i>
+                    <div class="logo-text">Chetha Lihour</div>
+                </div>
+                <nav>
+                    <div class="toggleBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navLinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="field trip1.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hello I'm <span class="input">Frontend Devoloper</span></h5>
+                    <h1>Chetha Lihour</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, tenetur. Sequi nihil incidunt distinctio aut quod. Dicta, ab optio libero culpa perspiciatis suscipit natus fuga.</p>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/lihourZ"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/lih0urz/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        let toggleBtn=document.querySelector(".toggleBtn");
+        let nav=document.querySelector(".navLinks");
+        let links=document.querySelector(".navLinks li");
+
+        toggleBtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        let typed=new Typed(".input",{
+            strings:["Frontend Developer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
